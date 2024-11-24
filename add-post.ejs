@@ -1,0 +1,40 @@
+<%- include('./partials/header.ejs') %> <%- include('./partials/nav.ejs') %>
+<div style="max-width: 520px; margin: 0 auto">
+  <h1 style="font: Garamond"><%=title%></h1>
+
+  <form method="post" action="">
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Назва </label>
+      <input
+        required
+        type="text"
+        class="form-control"
+        id="exampleInputPassword1"
+        name="title"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Нікнейм</label>
+      <input
+        required
+        type="text"
+        class="form-control"
+        id="exampleInputPassword1"
+        name="author"
+      />
+    </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Текст</label>
+        <input
+          required
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+          name="post_text"
+        />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Створити</button>
+  </form>
+</div>
+<%- include('./partials/footer.ejs') %>
